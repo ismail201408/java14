@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динамический список</title>
+</head>
+<body>
+    <p id="timer">Прошло 0 секунд!</p>
+
+    <script>
+        let seconds = 0;
+        setInterval(function() {
+            seconds++;
+            document.getElementById("timer").textContent = "Прошло " + seconds + " секунд!";
+        }, 1000);
+    </script>
+</body>
+</html>
